@@ -19,6 +19,7 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', include('doyoufollowme.urls')),
+    url(r'^accounts/', include('registration.backends.hmac.urls'))
     # url(r'^api/', include('serializers.urls')),
     # url(r'^login/', appviews.loginView, name='login'),
     # url(r'^app/', appviews.appView, name='app')

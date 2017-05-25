@@ -4,3 +4,4 @@ psycopg2
 django-htmlmin
 djangorestframework
 django-filter
+django-registration

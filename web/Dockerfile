@@ -30,4 +30,5 @@ RUN pip install -r requirements.txt
 ADD . /code/
 
 # Run migrations
-# RUN python ./code/manage.py migrate
+RUN python ./code/manage.py migrate auth
+RUN python ./code/manage.py migrate
