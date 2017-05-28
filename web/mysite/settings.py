@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+import passwords
 from django.core.mail import send_mail
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -134,3 +135,8 @@ ACCOUNT_ACTIVATION_DAYS = 4
 REGISTRATION_OPEN = True
 
 # Email settings
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = passwords.email_host
+EMAIL_HOST_PASSWORD = passwords.email_password
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
